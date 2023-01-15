@@ -24,5 +24,5 @@ function ButtonComponent({ iconName, title, selected, ...rest }: ButtonProps) {
 }
 
 export const Button = memo(ButtonComponent, (prevProps, nextProps) => {
-  return Object.is(prevProps.iconName, nextProps.iconName);
+  return Object.is(prevProps.selected, nextProps.selected);
 });

@@ -106,5 +106,5 @@ function IconComponent(props: IconProps) {
 }
 
 export const Icon = memo(IconComponent, (prevProps, nextProps) => {
-  return Object.is(prevProps.name, nextProps.name);
+  return Object.is(prevProps.color, nextProps.color);
 });
